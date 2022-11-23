@@ -1,6 +1,7 @@
 package org.generation.italy.christmas;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
@@ -45,17 +46,16 @@ public class Main {
 		public int compare(String o1, String o2) {
 			int v1 = 0;
 			int v2 = 0;
-
+			
+			List<Character> vowels = Arrays.asList(new Character[] {'a', 'e', 'i', 'o', 'u'});
 			for (int i = 0; i < o1.length(); i++) {
-				if (o1.charAt(i) == 'a' || o1.charAt(i) == 'e' || o1.charAt(i) == 'i' || o1.charAt(i) == 'o'
-						|| o1.charAt(i) == 'u') {
+				if (vowels.contains(o1.charAt(i))) {
 					v1++;
 				}
 			}
 
 			for (int i = 0; i < o2.length(); i++) {
-				if (o2.charAt(i) == 'a' || o2.charAt(i) == 'e' || o2.charAt(i) == 'i' || o2.charAt(i) == 'o'
-						|| o2.charAt(i) == 'u') {
+				if (vowels.contains(o2.charAt(i))) {
 					v2++;
 				}
 			}
