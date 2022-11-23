@@ -24,9 +24,8 @@ public class Main {
 		
 		sc.close();
 		
-		//ordino alfabeticamente la lista
 		wishList.sort(null);
-		
-		System.out.println(wishList);
+		System.out.println("---------------------");
+		System.out.println("Lista desideri: " + wishList);
 	}
 }
