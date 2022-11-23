@@ -3,6 +3,7 @@ package org.generation.italy.christmas;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Esercizio2 {
 	public static void main(String[] args) {
@@ -13,7 +14,8 @@ public class Esercizio2 {
 		sc.close();
 		String[] wArr = word.split("");
 		
-		Set<String> wordSet = new HashSet<>();
+		//TreeSet mette in ordine alfabetico i valori
+		Set<String> wordSet = new TreeSet<>();
 		
 		for (int i = 0; i < wArr.length; i++ ) {
 			String letter = wArr[i];
