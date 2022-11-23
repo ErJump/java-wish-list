@@ -3,6 +3,7 @@ package org.generation.italy.christmas;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class Esercizio3 {
 	public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Esercizio3 {
 		sc.close();
 		String[] wArr = w.split("");
 		
-		Map<String, Integer> wMap = new HashMap<>();
+		Map<String, Integer> wMap = new TreeMap<>();
 		
 		for (String letter : wArr) {
 			int counter = 0;
