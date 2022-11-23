@@ -6,7 +6,6 @@ import java.util.Set;
 
 public class Esercizio2 {
 	public static void main(String[] args) {
-		// ES - 2 ===============================================
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Inserire una parola: ");
